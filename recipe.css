@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,100;1,500&family=Barlow+Semi+Condensed:wght@400;500;600&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@300&family=Permanent+Marker&family=Poppins:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body{
+    background-color: coral;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+.recipe{
+    background-color: bisque;
+    padding: 20px;
+    width: auto;
+    margin: 200px;
+    border: none;
+    border-radius: 0px 30px;
+}
+#recipe-name,#recipe-ingredients,#recipe-instructions{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    height: auto;
+    font-size: 20px;
+}
+#Add-recipe{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: chocolate;
+    color: #fff;
+    font-size: 20px;
+
+}
+#Add-recipe:hover{
+    cursor: pointer;
+    background-color: rgb(182, 132, 96);
+}
+.section-class{
+    border: 2px dotted mediumslateblue;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    justify-content: left;
+}
+.section-class button{
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+
+}
+.section-class button:hover{
+    cursor: pointer;
+    background-color: grey;
+    width: 100%;
+}

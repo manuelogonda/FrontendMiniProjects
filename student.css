@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: darkslategrey;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.student{
+    background-color: cornsilk;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    width: auto;
+    margin: 160px;
+}
+.student-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#studentName,#studentClass{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    height: 10px;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+}
+#anotherStudent{
+    border: none;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(0, 255, 213);
+
+}
+#English,#Mathematics,#Chemistry,#Physics,#Biology,#Geography,#compterStudies{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    height: 10px;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+}
+#searchStudent{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    height: 20px;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(206, 151, 151);
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+#displayAllStudents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#anotherStudent:hover{
+    background-color: darkcyan;
+    cursor: pointer;
+
+}
+.student-List{
+    border: 2px dotted blue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
