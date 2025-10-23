@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Sign Up with your Valid Credentials</h1>
+        <div class="formgroup">
+            <label for="First name" id="label">First Name:</label>
+            <input type="text" placeholder="First Name" id="first-Name" onkeydown="validateFirstName()"> <br>
+            <span id="firstName-Error"></span>
+            <br>
+        </div>
+
+        <div class="formgroup">
+            <label for="Second name" id="label">Second Name:</label>
+            <input type="text" placeholder="Second Name" id="second-Name" onkeydown="validateSecondName()"> <br>
+            <span id="secondName-Error"></span>
+        </div>
+
+        <div class="formgroup">
+            <label for="Phone Number" id="label">Phone Number:</label>
+            <input type="tel" maxlength="10" placeholder="+254" id="phoneNumber" onkeydown="validatePhoneNumber()"> <br>
+            <span id="phoneNumber-Error"></span>
+        </div>
+
+        <div class="formgroup">
+            <label for="email" id="label">Your Email:</label>
+            <input type="email" placeholder="Enter email" id="email-Name" onkeydown="validateEmail()"><br>
+            <span id="email-Error"></span>
+        </div>
+
+        <div class="formgroup">
+            <label for="password" id="label">Enter Password:</label>
+            <input type="password" placeholder="Password" id="password-Name" onkeydown="validatePassword()"> <br>
+            <span id="password-Error"></span>
+        </div>
+        <button type="button" id="Btn" onclick="submitForm()">Submit</button> <br>
+        <span id="submit-Error"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
