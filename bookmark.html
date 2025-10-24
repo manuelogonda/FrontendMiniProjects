@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookmarked pages</title>
+    <link rel="stylesheet" href="bookmark.css">
+</head>
+<body>
+    <div class="allcontents">
+        <form id="markedpages">
+            <h1>My Bookmarked Pages</h1>
+            <label for="Bookmark-Name">Bookmark-Name</label>
+            <input type="text"  id="bookmarkName" placeholder="Enter Bookmark Name" required>
+            <label for="Bookmark-URL">Bookmark-URL</label>
+            <input type="url" id="bookmarkURL" placeholder="Enter Bookmark URL" required>
+            <button type="button" id="addBookmarkBtn">Add Bookmark</button>
+        </form>
+            <div id="bookmarksList"></div>
+    </div>
+        
+
+    <script src="bookmark.js"></script>
+</body>
+</html>

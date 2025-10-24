@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter App</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <div class="currency-container">
+        <h1>Live Currency Converter</h1>
+        <label for="amount">Amount:</label>
+        <input type="number" id="userAmount" placeholder="Enter amount" required>
+        <label for="fromCurrency">Convert From:</label>
+        <select id="fromCurrency">
+            <option value="USD">US Dollar(USD)</option>
+            <option value="EUR">Euros(EUR)</option>
+            <option value="KES">Kenyan Shilling(KES)</option>
+            <option value="SAR">Saudi Riyal(SAR)</option>
+            <option value="RUB">Russian Ruble(RUB)</option>
+            <option value="CNY">Chinese Yuan(CNY)</option>
+            <option value="JPY">Japanese Yen(JPY)</option>
+            <option value="GBP">British Pound(GBP)</option>
+            <option value="AED">UAE Dirham(AED)</option>
+            <option value="CHF">Swiss Franc(CHF)</option>
+            <option value="INR">Indian Rupee(INR)</option>
+        </select>
+        <label for="toCurrency">Convert To:</label>
+        <select id="toCurrency">
+            <option value="USD">US Dollar(USD)</option>
+            <option value="EUR">Euros(EUR)</option>
+            <option value="KES">Kenyan Shilling(KES)</option>
+            <option value="SAR">Saudi Riyal(SAR)</option>
+            <option value="RUB">Russian Ruble(RUB)</option>
+            <option value="CNY">Chinese Yuan(CNY)</option>
+            <option value="JPY">Japanese Yen(JPY)</option>
+            <option value="GBP">British Pound(GBP)</option>
+            <option value="AED">UAE Dirham(AED)</option>
+            <option value="CHF">Swiss Franc(CHF)</option>
+            <option value="INR">Indian Rupee(INR)</option>
+        </select>
+            <button id="convertBtn">Convert</button>
+            <div class="result" id="result"></div>
+            <div class="error" id="error"></div>
+    </div>
+    <script src="currency.js"></script>
+</body>
+</html>

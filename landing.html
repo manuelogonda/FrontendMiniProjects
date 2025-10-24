@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+   <!--Hero/header section-->
+   <header class="hero-section">
+    <nav>
+        <h1>Task Flow</h1>
+        <ul>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="hero-content">
+        <h2>Organize Your Life with Ease</h2>
+        <p>TaskFlow helps you manage your tasks effortlessly.</p>
+        <button type="button" id="startBtn">Get Started</button>
+    </div>
+   </header>
+
+   <!-- FEATURES -->
+   <section id="featureSection" class="features">
+     <div class="feature">
+        <h3>Simple Interface</h3>
+        <p>Clean and intuitive design to focus on what matters.</p>
+     </div>
+     <div class="feature">
+        <h3>Cross-Platform</h3>
+        <p>Access your tasks anywhere, anytime.</p>
+     </div>
+     <div class="feature">
+        <h3>Secure</h3>
+        <p>Your data is encrypted and safe with us.</p>
+     </div>
+   </section>
+
+    <!-- CONTACTS FORM -->
+     <section class="contact" id="contact">
+        <h2>Join TaskFlow Today</h2>
+        <form id="signUpForm">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <div class="error" id="nameError"></div>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <div class="error" id="emailError"></div>
+            <input type="number" id="number" placeholder="Phone Number" required>
+            <div class="error" id="numberError"></div>
+            <button type="button" id="signUpBtn">Sign Up</button>
+        </form>
+     </section>
+
+     <!-- FOOTER -->
+        <footer id="footerSection">
+            <p>&copy; 2025 TaskFlow. All rights reserved.</p>
+        </footer>
+
+    <script src="landing.js"></script>
+</body>
+</html>

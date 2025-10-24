@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Book Lists</title>
+    <link rel="stylesheet" href="booklist.css">
+</head>
+<body>
+    <div class="book-list-container">
+        <h1>Books List Manager</h1>
+        <form id="bookForm">
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle" placeholder="Enter book title" required>
+
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" placeholder="Enter author's name" required>
+
+            <label for="bookGenre">Genre:</label>
+            <input type="text" id="bookGenre" placeholder="Enter book genre" required>
+
+            <button type="button" id="addBookBtn">Add Book</button>
+        </form>
+        <h2>Books Read</h2>
+        <div id="booklistsArea"></div>
+    </div>
+    <script src="booklist.js"></script>
+</body>
+</html>

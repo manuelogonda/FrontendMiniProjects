@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,100;1,500&family=Barlow+Semi+Condensed:wght@400;500;600&family=Cabin+Condensed:wght@400;500&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Oswald:wght@300&family=Permanent+Marker&family=Poppins:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: mediumslateblue;
+     box-sizing: border-box;
+    font-family: "Cabin Condensed", sans-serif;
+}
+.movie{
+    background-color: chocolate;
+    border-radius: 20px;
+    border: none;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    color: #262924;
+}
+#movie-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#movieName,#movieGenre,#releaseDate,#movieSummary,#movieMainCharacter{
+    border: none;
+    width: 100%;
+    background-color: whitesmoke;
+    height: auto;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+label{
+    font-size: 20px;
+}
+#searchMovie{
+    border: none;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px;
+    height: auto;
+    font-size: 20px;
+}
+#addMovieBtn{
+    border: none;
+    width: 100%;
+    background-color: darkturquoise;
+    height: auto;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+#addMovieBtn:hover{
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+.movie-list-style{
+    padding: 20px;
+    background-color: rgb(129, 111, 235);
+    border-radius: 10px;
+    height: auto;
+    margin: 10px;
+}
+#displayMovieList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.movie-list-style button{
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: darkgrey;
+}
+.movie-list-style button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+}
+

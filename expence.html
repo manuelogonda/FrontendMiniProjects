@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your Expences Mate</title>
+    <link rel="stylesheet" href="expence.css">
+</head>
+<body>
+    <div class="expence">
+        <h1>Track Your Expences</h1>
+        <form class="expence-form">
+            <label for="Name of Expence">Expence Name:</label>
+            <input type="text" id="expenceName" placeholder="Enter Expence name">
+
+            <label for="Amount of Expence">Expence Amount:</label>
+            <input type="number" id="expenceAmount" placeholder="Enter Expence Amount">
+
+            <label for="Date of Expence">Expence Date:</label>
+            <input type="date" id="expenceDate">
+
+            <button type="button" id="AddExpence">Track Another Expence</button>
+        </form>
+        <div id="#searchExpenceSection">
+          <label for="Search area">Search Expence:</label>
+          <input type="text" id="expenceSearch" placeholder="Searh Expence by name....">
+        </div>
+        
+        <hr>
+        <div id="displaExpences"></div>
+        <h4>Total Expences: ksh <span id="totalAmount">0</span> Only</h4>
+    </div>
+        
+    <script src="expence.js"></script>
+</body>
+</html>

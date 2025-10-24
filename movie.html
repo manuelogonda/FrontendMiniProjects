@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies watched</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <div class="movie">
+        <h1>Movies Watch List</h1>
+        <form id="movie-form">
+            <label for="Movie Name">Movie Name:</label>
+            <input type="text" id="movieName" placeholder="Enter Movie Name">
+            <label for="Genre">Genre:</label>
+            <input type="text" id="movieGenre" placeholder="Enter Movie Genre">
+            <label for="Release Date">Date Released:</label>
+            <input type="date" id="releaseDate">
+            <label for="Status">Check Movie Status:</label>
+            Already Watched
+            <input type="checkbox" id="movieWatched">
+            UnWatched Movie
+            <input type="checkbox" id="movieUnWatched">
+            <label for="Decscription">Short Summary:</label>
+            <textarea id="movieSummary"></textarea>
+            <label for="Main Character">Main Character:</label>
+            <input type="text" id="movieMainCharacter" placeholder="Enter the main Character">
+            <button type="button" id="addMovieBtn">Another Movie</button>
+        </form>
+        <input type="text" id="searchMovie" placeholder="Search a Movie by Name..">
+        <div id="displayMovieList"></div>
+    </div>
+    <script src="movie.js"></script>
+</body>
+</html>

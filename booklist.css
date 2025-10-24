@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1cfcb;
+    color: #333;
+}
+.book-list-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #4942346b;
+    width: auto;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 40px;
+    border-radius: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    margin-bottom: 0px;
+    text-decoration: underline;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #2e6db6;
+
+}
+#bookForm{
+    max-width: 600px;
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 0 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #3d3939;
+}
+#bookTitle, #bookAuthor, #bookGenre {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+#bookTitle:focus, #bookAuthor:focus, #bookGenre:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    color: #333;
+    font-weight: bold;
+
+}
+#addBookBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+#addBookBtn:hover {
+    background-color: #0056b3;
+}
+#booklistsArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+#booklistsArea .book{
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+#booklistsArea .book  h4{
+    margin-bottom: 10px;
+    color: #2e6db6;
+    font-size: 20px;
+    text-align: center;
+}
+#booklistsArea .book  p{
+    margin-bottom: 5px;
+    color: #5c5858;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+}
+#booklistsArea .book .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#booklistsArea .book .delete-btn:hover {
+    background-color: #c82333;
+    transition: background-color 0.3s ease;
+    
+}
+

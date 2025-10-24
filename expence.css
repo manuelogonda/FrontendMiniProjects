@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(75, 109, 209);
+}
+hr{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.expence{
+    background-color: snow;
+    border: none;
+    border-radius: 20px;
+    width: auto;
+    padding: 20px;
+    margin: 60px;
+}
+.expence-form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 20px;
+}
+#expenceName,#expenceAmount,#expenceDate{
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    background-color: lightslategrey;
+    height: auto;
+    margin-bottom: 14px;
+    color: #fff;
+}
+#expenceName:focus,#expenceAmount:focus,#expenceDate:focus{
+    outline: none;
+    border: rgb(75, 109, 209) solid 2px;
+}
+#AddExpence{
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    background-color: lightgreen;
+    color: #000;
+}
+#AddExpence:hover{
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+}
+.expence-Container-style{
+    border-radius: 10px;
+    border: none;
+    background-color: lightsteelblue;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+    margin-bottom: 14px;
+}
+#expenceSearch{
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 15px;
+    width: 400px;
+    height: auto;
+    background-color: rgb(247, 215, 158);
+    margin: 10px;
+}
+#displaExpences{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.expence-Container-style button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(206, 88, 153);
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+h4{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+.expence-Container-style button:hover{
+    cursor: pointer;
+    background-color: rgba(209, 30, 104, 0.911);
+}
+@media (width > 900px) {
+    body{
+        background-color: rgba(152, 207, 214, 0.911);
+        margin: 20px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 4rem;
+        color: darkblue;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+    .expence{
+        width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: auto;
+        padding: 20px;
+    }
+    #expenceSearch{
+        width: 65%;
+        background-color: rgb(240, 243, 75);
+    }
+    
+    .expence-form{ 
+        width: 60%;
+        margin: 10px auto;
+        padding: 15px;
+        font-size: 18px;
+        justify-content: center;
+        justify-items: center;
+    }
+    #searchExpenceSection{
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: center;
+        justify-items: center;
+    }
+    label{
+        font-size: 1.7rem;
+    }
+    #displaExpences{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    }
+    .expence-Container-style pre{
+        padding: 10px;
+        font-size: 1.2rem;
+        color: #333;
+    }
+    .expence-Container-style {
+        padding: 30px;
+        margin: 10px;
+        background-color: #f0f0f0;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: auto;
+    }
+    .expence-Container-style h3{
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+}
+@media (width < 400px) {
+    body{
+        background-color: lightcoral;
+        margin: 10px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .expence{
+        width: 400px;
+        margin: 40px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: auto;
+    }
+    #expenceSearch{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .expence-form{
+        width: 90%;
+        margin: 10px auto;
+    }
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    .expence-Container-style button{
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .expence-Container-style h3{
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    #displaExpences{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: nowrap;
+        height: auto;
+        margin: 20px auto;
+    }
+    .expence-Container-style{
+        padding: 20px;
+        margin: 10px;
+        background-color: #f0f0f0;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+    .expence-Container-style button:hover{
+        cursor: pointer;
+        background-color: rgba(209, 30, 104, 0.911);
+    }
+
+    .expence-Container-style h3{
+        font-size: 1.2rem;
+        color: #333;
+    }
+    .expence-Container-style pre{
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+}
+
+    

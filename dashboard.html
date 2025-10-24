@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- left profile -->
+         <div class="card-frofile-summarry">
+            <div style="display: flex;align-items: center; justify-content: space-between;">
+                <div class="meta">User Profile</div>
+                <div class="actions">
+                    <button id="editBtn" class="btn">Edit</button>
+                    <button id="deleteBtn" class="btn-ghost">Reset</button>
+                </div>
+            </div>
+         </div>
+
+        <!-- right profile -->
+         <div class="avatar-wrap">
+            <img src="" alt="avatar" id="avatarImg" class="avatar">
+            <div>
+                <div id="displayName" class="name">My Name</div>
+                <div id="displayRole" class="role">Frontend Developer</div>
+            </div>
+         </div>
+
+         <div class="info-row">
+            <div>
+                <div class="muted-small">Email</div>
+                <div id="displayEmail">example@gmail.com</div>
+            </div>
+            <div>
+                <div class="muted-small">Language</div>
+                <div id="displayLanguage">English</div>
+            </div>
+         </div>
+
+        <div class="info-row">
+            <div>
+                <div class="muted-small">Notifications</div>
+                <div id="displayNotif">Enabled</div>
+            </div>
+            <div>
+                <div class="muted-small">Theme</div>
+                <div id="displayTheme">Light</div>
+            </div>
+        </div>
+        
+        <div style="margin-top:8px;">
+            <div class="muted-small">About</div>
+            <div id="displayAbout" style="margin-top:8px;">A short bio goes here — say a sentence or two about yourself.</div>
+        </div>
+
+        <!-- RIGHT: details & edit area -->
+<div class="card profile-details">
+    <div class="meta">Profile Details</div>
+
+    <div id="viewArea">
+        <!-- view area shows nothing extra because left column shows summary -->
+        <p class="muted">Click <strong>Edit</strong> to change profile information, upload an avatar, or adjust
+            preferences.</p>
+    </div>
+
+    <form id="editForm" style="display:none;" onsubmit="event.preventDefault(); saveProfile();">
+        <div class="grid-2">
+            <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" type="text" placeholder="Enter Name" required />
+            </div>
+            <div class="field">
+                <label for="role">Role / Title</label>
+                <input id="role" type="text" placeholder="Frontend Developer" />
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+                <label for="language">Language</label>
+                <select id="language">
+                    <option value="English">English</option>
+                    <option value="Swahili">Swahili</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                </select>
+            </div>
+        </div>
+
+        <div style="margin-top:12px;">
+            <label for="about">About</label>
+            <textarea id="about" placeholder="A short bio..."></textarea>
+        </div>
+
+        <div style="margin-top:12px; display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <div>
+                <label class="small-muted">Avatar</label><br>
+                <input id="avatarInput" type="file" accept="image/*">
+            </div>
+
+            <div style="margin-left:auto; display:flex; gap:8px; align-items:center;">
+                <div class="toggle-small">
+                    <div style="margin-right:8px;">Email notifications</div>
+                    <div id="notifSwitch" class="switch">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+
+                <div class="toggle-small" style="align-items:center;">
+                    <div style="margin-right:8px;">Theme</div>
+                    <div id="themeSwitch" class="switch">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions" style="margin-top:14px;">
+            <button type="button" id="cancelBtn" class="btn-ghost">Cancel</button>
+            <button type="submit" class="btn">Save</button>
+        </div>
+    </form>
+
+    <div style="margin-top:8px;">
+        <div class="meta">Advanced</div>
+        <div style="display:flex; gap:10px; margin-top:8px;">
+            <button id="exportBtn" class="btn-ghost">Export JSON</button>
+            <button id="importBtn" class="btn-ghost">Import JSON</button>
+        </div>
+        <div class="muted-small" style="margin-top:8px;">Use export/import to backup or move profile data.</div>
+    </div>
+
+    <!-- hidden file input for importing JSON -->
+    <input id="importFile" type="file" accept="application/json" style="display:none;">
+
+
+  </div>
+</div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
