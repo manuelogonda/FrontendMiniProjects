@@ -8,6 +8,7 @@ body{
   width:200px;
   height:200px;
   position:relative;
+  translate: transform(-50%,-50%);
 }
 .earth{
   position:absolute;
@@ -15,6 +16,7 @@ body{
   height:100px;
   top:50%;
   left:50%;
+  border-radius: 50%;
   background-color:grey;
   transform:translate(-50%, -50%);
 }
@@ -22,16 +24,29 @@ body{
   width:200px;
   height:200px;
   position:absolute;
+  top:50%;
+  left:50%;
   transform:translate(-50% -50%);
   border:50%;
   animation:orbit 5s linear infinite;
 }
+/*
+animation-name,
+aniamtion-duration[usually in seconds],
+animation-timing-function,
+animation-delay,
+aniamtion-iteration-count[for how long should the animation occur],
+aniamtion-fill-mode
+*/
 .moon{
   position:absolute;
   width:30px;
   height:30px;
   background-color: blue;
   border-radius:50%;
+  transform: translate(-50%);
+  top:0;
+  left:50%;
 }
 @keyframes orbit{
   0%{
